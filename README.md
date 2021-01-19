@@ -138,7 +138,8 @@ LIKE '%Market%'
 
 ```SQL
 
-
+INSERT INTO Customers(customer_id, Company_Name, contact_name, Address, City, postal_code, Country) 
+VALUES('SHIRE', 'The Shire', 'Bilbo Baggins', '1 Hobbit-Hole', 'Bag End', '111', 'Middle Earth')
 
 ```
 
@@ -151,7 +152,9 @@ LIKE '%Market%'
 
 ```SQL
 
-
+UPDATE Customers
+SET postal_code = '11122' 
+WHERE Customer_ID = '3003'
 
 ```
 
